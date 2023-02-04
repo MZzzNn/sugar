@@ -32,9 +32,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               child: Row(
-                children: [
+                children: const [
                   CircleAvatar(backgroundImage: AssetImage("assets/images/man.png")),
-                  const SizedBox(width: 10),
+                  SizedBox(width: 10),
                   Text(
                       "مرحبا بك محمد",
                       style: TextStyle(
