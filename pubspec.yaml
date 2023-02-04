@@ -14,14 +14,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  
-  
+
+
   cupertino_icons: ^1.0.5
   flutter_lints: ^2.0.1
   get: ^4.6.5
   smooth_page_indicator: ^1.0.0+2
   font_awesome_flutter: ^10.3.0
   expandable: ^5.0.1
+  animated_bottom_navigation_bar: ^1.1.0+1
+  auto_size_text: ^3.0.0
+  flutter_svg: ^1.1.6
 
 
 

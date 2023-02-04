@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sugar/shared/theme.dart';
+
+import '../../../layout/app_layout.dart';
 
 class Register4 extends StatelessWidget {
   const Register4({Key? key}) : super(key: key);
@@ -32,7 +35,7 @@ class Register4 extends StatelessWidget {
               width: size.width * 0.5,
               height: 45,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.offAll(() => const AppLayout()),
                 child: const Text(
                   'تسجيل',
                   style: TextStyle(

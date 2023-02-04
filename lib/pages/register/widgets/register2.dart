@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../../../shared/dropdown/custom_dropdown_button.dart';
-import '../../../shared/dropdown/custom_dropdown_button2.dart';
+import '../../../shared/widgets/dropdown/custom_dropdown_button.dart';
 
 class Register2 extends StatelessWidget {
   const Register2({Key? key}) : super(key: key);

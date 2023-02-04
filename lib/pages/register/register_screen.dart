@@ -8,6 +8,8 @@ import 'package:sugar/pages/register/widgets/register3.dart';
 import 'package:sugar/pages/register/widgets/register4.dart';
 import 'package:sugar/shared/theme.dart';
 
+import '../../layout/app_layout.dart';
+
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
 

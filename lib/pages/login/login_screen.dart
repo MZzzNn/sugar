@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sugar/pages/register/register_screen.dart';
 
+import '../../layout/app_layout.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -79,7 +81,7 @@ class LoginScreen extends StatelessWidget {
                   width: size.width * 0.5,
                   height: 50,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.offAll(() => const AppLayout()),
                     child: const Text(
                       'دخول',
                       style: TextStyle(

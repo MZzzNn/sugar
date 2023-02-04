@@ -38,6 +38,10 @@ class _CustomDropdownButtonState extends State<CustomDropdownButton> {
                   value: item,
                   child: Row(
                     children: [
+                      if(widget.icon != null)...{
+                        Icon(widget.icon, color: ThemeManager.grey, size: 18),
+                        const SizedBox(width: 10),
+                      },
                       if(widget.prefixIcon != null)...{
                         Image.asset(
                           widget.prefixIcon!,
