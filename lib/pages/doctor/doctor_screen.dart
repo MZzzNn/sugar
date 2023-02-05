@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sugar/shared/theme.dart';
+
+import '../profile/profile_screen.dart';
 
 class DoctorScreen extends StatelessWidget {
   const DoctorScreen({Key? key}) : super(key: key);
@@ -76,60 +79,63 @@ class DoctorScreen extends StatelessWidget {
   }
 
   Widget doctorCard() {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: [
-          BoxShadow(
-            color: ThemeManager.grey.withOpacity(0.2),
-            spreadRadius: 1,
-            blurRadius: 5,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      child: ListTile(
-        leading: const CircleAvatar(
-          radius: 30,
-          backgroundImage: AssetImage('assets/images/doctor_avatar.png'),
-        ),
-        title: const Text.rich(
-          TextSpan(
-            text: 'الاسم:',
-            style: TextStyle(
-              fontSize: 17,
-              fontWeight: FontWeight.w500,
+    return InkWell(
+      onTap: ()=>Get.to(()=>const ProfileScreen()),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: ThemeManager.grey.withOpacity(0.2),
+              spreadRadius: 1,
+              blurRadius: 5,
+              offset: const Offset(0, 3),
             ),
-            children: [
-              WidgetSpan(child: SizedBox(width: 5)),
-              TextSpan(
-                text: 'علاء أبو زيد',
-                style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-        ),
-        subtitle: const Text.rich(
-          TextSpan(
-            text: 'الرقم:',
-            children: [
-              WidgetSpan(child: SizedBox(width: 5)),
-              TextSpan(text: '+20123456789'),
-            ],
-          ),
-        ),
-        trailing: Stack(
-          clipBehavior: Clip.none,
-          alignment: Alignment.center,
-          children: const [
-            Icon(Icons.star, color: Colors.yellow, size: 45),
-            Text('4.5'),
           ],
+        ),
+        child: ListTile(
+          leading: const CircleAvatar(
+            radius: 30,
+            backgroundImage: AssetImage('assets/images/doctor_avatar.png'),
+          ),
+          title: const Text.rich(
+            TextSpan(
+              text: 'الاسم:',
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w500,
+              ),
+              children: [
+                WidgetSpan(child: SizedBox(width: 5)),
+                TextSpan(
+                  text: 'علاء أبو زيد',
+                  style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          subtitle: const Text.rich(
+            TextSpan(
+              text: 'الرقم:',
+              children: [
+                WidgetSpan(child: SizedBox(width: 5)),
+                TextSpan(text: '+20123456789'),
+              ],
+            ),
+          ),
+          trailing: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.center,
+            children: const [
+              Icon(Icons.star, color: Colors.yellow, size: 45),
+              Text('4.5'),
+            ],
+          ),
         ),
       ),
     );
