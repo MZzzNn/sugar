@@ -50,6 +50,18 @@ class ThemeManager {
         ),
       ),
     ),
+    chipTheme: ChipThemeData(
+      backgroundColor: redLight,
+      selectedColor: blueLight,
+      disabledColor: greyLight,
+      secondarySelectedColor: blueLight,
+      secondaryLabelStyle: const TextStyle(color: blue),
+      labelStyle: const TextStyle(color: Colors.white),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+      ),
+    ),
   );
 
   static const InputBorder _border = OutlineInputBorder(

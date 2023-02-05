@@ -6,7 +6,7 @@ class AdviceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+        padding: const EdgeInsets.all(20),
         physics: const BouncingScrollPhysics(),
         itemBuilder: (_, i) {
           return Container(

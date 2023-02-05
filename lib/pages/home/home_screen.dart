@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     return SizedBox(
       height: double.infinity,
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+        padding: const EdgeInsets.all(20),
         physics: const BouncingScrollPhysics(),
         child: Column(
           mainAxisSize: MainAxisSize.max,
